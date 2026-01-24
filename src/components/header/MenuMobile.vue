@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MenuItens from '@/components/ui/MenuItens.vue';
+import MenuItens from '@/components/shared/ui/MenuItens.vue';
 
 </script>
 
