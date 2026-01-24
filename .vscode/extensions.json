@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "EditorConfig.EditorConfig",
+    "prettier.prettier-vscode",
+    "arcanis.vscode-zipfs",
+    "esbenp.prettier-vscode"
+  ]
+}
