@@ -29,6 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@tailwindcss/vite", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:4.1.18"],\
+          ["@tanstack/vue-query", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:5.92.9"],\
           ["@tsconfig/node24", "npm:24.0.4"],\
           ["@types/node", "npm:24.10.9"],\
           ["@vitejs/plugin-vue", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:6.0.3"],\
@@ -1516,6 +1517,55 @@ const RAW_RUNTIME_STATE =
         "packagePeers": [\
           "@types/vite",\
           "vite"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@tanstack/match-sorter-utils", [\
+      ["npm:8.19.4", {\
+        "packageLocation": "../../.yarn/berry/cache/@tanstack-match-sorter-utils-npm-8.19.4-549600145e-10c0.zip/node_modules/@tanstack/match-sorter-utils/",\
+        "packageDependencies": [\
+          ["@tanstack/match-sorter-utils", "npm:8.19.4"],\
+          ["remove-accents", "npm:0.5.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@tanstack/query-core", [\
+      ["npm:5.90.20", {\
+        "packageLocation": "../../.yarn/berry/cache/@tanstack-query-core-npm-5.90.20-fe193b58bc-10c0.zip/node_modules/@tanstack/query-core/",\
+        "packageDependencies": [\
+          ["@tanstack/query-core", "npm:5.90.20"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@tanstack/vue-query", [\
+      ["npm:5.92.9", {\
+        "packageLocation": "../../.yarn/berry/cache/@tanstack-vue-query-npm-5.92.9-44f16d2f3f-10c0.zip/node_modules/@tanstack/vue-query/",\
+        "packageDependencies": [\
+          ["@tanstack/vue-query", "npm:5.92.9"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:5.92.9", {\
+        "packageLocation": "./.yarn/__virtual__/@tanstack-vue-query-virtual-0df18c5085/3/.yarn/berry/cache/@tanstack-vue-query-npm-5.92.9-44f16d2f3f-10c0.zip/node_modules/@tanstack/vue-query/",\
+        "packageDependencies": [\
+          ["@tanstack/match-sorter-utils", "npm:8.19.4"],\
+          ["@tanstack/query-core", "npm:5.90.20"],\
+          ["@tanstack/vue-query", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:5.92.9"],\
+          ["@types/vue", null],\
+          ["@types/vue__composition-api", null],\
+          ["@vue/composition-api", null],\
+          ["@vue/devtools-api", "npm:6.6.4"],\
+          ["vue", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:3.5.27"],\
+          ["vue-demi", "virtual:0df18c50851b34b180299589bc44eba0b3e85ea8c57bf2a55bdc62a422f7c9674ae58fa16e4121c89a3cabff3667b14299ab269b847fc5ea96d289c3f92e9875#npm:0.14.10"]\
+        ],\
+        "packagePeers": [\
+          "@types/vue",\
+          "@types/vue__composition-api",\
+          "@vue/composition-api",\
+          "vue"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3691,6 +3741,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@tailwindcss/vite", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:4.1.18"],\
+          ["@tanstack/vue-query", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:5.92.9"],\
           ["@tsconfig/node24", "npm:24.0.4"],\
           ["@types/node", "npm:24.10.9"],\
           ["@vitejs/plugin-vue", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:6.0.3"],\
@@ -4321,6 +4372,15 @@ const RAW_RUNTIME_STATE =
           ["json-parse-even-better-errors", "npm:4.0.0"],\
           ["npm-normalize-package-bin", "npm:4.0.0"],\
           ["read-package-json-fast", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["remove-accents", [\
+      ["npm:0.5.0", {\
+        "packageLocation": "../../.yarn/berry/cache/remove-accents-npm-0.5.0-aed916f699-10c0.zip/node_modules/remove-accents/",\
+        "packageDependencies": [\
+          ["remove-accents", "npm:0.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5057,6 +5117,32 @@ const RAW_RUNTIME_STATE =
         "packagePeers": [\
           "@types/typescript",\
           "typescript"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["vue-demi", [\
+      ["npm:0.14.10", {\
+        "packageLocation": "./.yarn/unplugged/vue-demi-virtual-a70a55764e/node_modules/vue-demi/",\
+        "packageDependencies": [\
+          ["vue-demi", "npm:0.14.10"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:0df18c50851b34b180299589bc44eba0b3e85ea8c57bf2a55bdc62a422f7c9674ae58fa16e4121c89a3cabff3667b14299ab269b847fc5ea96d289c3f92e9875#npm:0.14.10", {\
+        "packageLocation": "./.yarn/unplugged/vue-demi-virtual-a70a55764e/node_modules/vue-demi/",\
+        "packageDependencies": [\
+          ["@types/vue", null],\
+          ["@types/vue__composition-api", null],\
+          ["@vue/composition-api", null],\
+          ["vue", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:3.5.27"],\
+          ["vue-demi", "virtual:0df18c50851b34b180299589bc44eba0b3e85ea8c57bf2a55bdc62a422f7c9674ae58fa16e4121c89a3cabff3667b14299ab269b847fc5ea96d289c3f92e9875#npm:0.14.10"]\
+        ],\
+        "packagePeers": [\
+          "@types/vue",\
+          "@types/vue__composition-api",\
+          "@vue/composition-api",\
+          "vue"\
         ],\
         "linkType": "HARD"\
       }]\
