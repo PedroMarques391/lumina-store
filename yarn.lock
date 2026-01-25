@@ -2964,6 +2964,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lucide-vue-next@npm:^0.563.0":
+  version: 0.563.0
+  resolution: "lucide-vue-next@npm:0.563.0"
+  peerDependencies:
+    vue: ">=3.0.1"
+  checksum: 10c0/cf18c0bac9bf306ab4f69d508bc08ddc4282f57503c45aa82feb4de8b053cf5ac77ecb3d71314d1cec1c96fd7ad687bf116efc32bba8d2a549bcce00aabf60e0
+  languageName: node
+  linkType: hard
+
 "lumina-store@workspace:.":
   version: 0.0.0-use.local
   resolution: "lumina-store@workspace:."
@@ -2980,6 +2989,7 @@ __metadata:
     eslint: "npm:^9.39.2"
     eslint-plugin-vue: "npm:~10.6.2"
     jiti: "npm:^2.6.1"
+    lucide-vue-next: "npm:^0.563.0"
     npm-run-all2: "npm:^8.0.4"
     pinia: "npm:^3.0.4"
     prettier: "npm:3.7.4"

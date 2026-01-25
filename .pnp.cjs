@@ -40,6 +40,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:9.39.2"],\
           ["eslint-plugin-vue", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:10.6.2"],\
           ["jiti", "npm:2.6.1"],\
+          ["lucide-vue-next", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:0.563.0"],\
           ["lumina-store", "workspace:."],\
           ["npm-run-all2", "npm:8.0.4"],\
           ["pinia", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:3.0.4"],\
@@ -3736,6 +3737,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["lucide-vue-next", [\
+      ["npm:0.563.0", {\
+        "packageLocation": "../../.yarn/berry/cache/lucide-vue-next-npm-0.563.0-f3c54a8fdd-10c0.zip/node_modules/lucide-vue-next/",\
+        "packageDependencies": [\
+          ["lucide-vue-next", "npm:0.563.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:0.563.0", {\
+        "packageLocation": "./.yarn/__virtual__/lucide-vue-next-virtual-51d69865b5/3/.yarn/berry/cache/lucide-vue-next-npm-0.563.0-f3c54a8fdd-10c0.zip/node_modules/lucide-vue-next/",\
+        "packageDependencies": [\
+          ["@types/vue", null],\
+          ["lucide-vue-next", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:0.563.0"],\
+          ["vue", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:3.5.27"]\
+        ],\
+        "packagePeers": [\
+          "@types/vue",\
+          "vue"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["lumina-store", [\
       ["workspace:.", {\
         "packageLocation": "./",\
@@ -3752,6 +3775,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:9.39.2"],\
           ["eslint-plugin-vue", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:10.6.2"],\
           ["jiti", "npm:2.6.1"],\
+          ["lucide-vue-next", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:0.563.0"],\
           ["lumina-store", "workspace:."],\
           ["npm-run-all2", "npm:8.0.4"],\
           ["pinia", "virtual:6b2f1f6c18eb43e9b5b88bf972faeaaf72fb6cf7c123ae4170b8fe7731414396b685189833c87e9bdd3c4aad34e14106a7e76fb164c185307776c3e7b4928e72#npm:3.0.4"],\
