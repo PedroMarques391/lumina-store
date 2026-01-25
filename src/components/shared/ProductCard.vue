@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Product } from '@/types/Products';
 import { Star } from 'lucide-vue-next';
+import FloatingActionButtons from './ui/FloatingActionButtons.vue';
 
 
 defineProps<{
@@ -9,9 +10,10 @@ defineProps<{
 </script>
 
 <template>
-  <div class="card bg-base-100 shadow-sm flex flex-col relative rounded-xl">
+  <div class="card bg-base-100 shadow-sm flex flex-col relative rounded-xl group">
     <span class="badge absolute top-2 left-2">{{ product.category.slice(0, 1).toUpperCase() + product.category.slice(1)
     }}</span>
+    <FloatingActionButtons />
     <figure class="px-6 pt-6 h-48 flex items-center justify-center bg-white rounded-t-xl">
       <img :src="product.image" :alt="product.title"
         class="max-h-full max-w-full object-contain hover:scale-105 transition-transform duration-300" />
