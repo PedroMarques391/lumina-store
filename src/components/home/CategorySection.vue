@@ -5,17 +5,20 @@ const categories = [
   {
     name: 'Jewelery',
     value: 'jewelery',
-    image: '/images/Jewelery.jpeg'
+    image: '/images/Jewelery.jpeg',
+    url: '/products/category/jewelery'
   },
   {
     name: "Men's clothing",
     value: "mens-clothing",
-    image: '/images/Mens-Clothing.jpeg'
+    image: '/images/Mens-Clothing.jpeg',
+    url: '/products/category/mens-clothing'
   },
   {
     name: "Women's clothing",
     value: "womens-clothing",
-    image: '/images/Womens-Clothing.jpeg'
+    image: '/images/Womens-Clothing.jpeg',
+    url: '/products/category/womens-clothing'
   },
 ]
 </script>
@@ -26,7 +29,7 @@ const categories = [
       <SectionTitle title="Browse by Category" subtitle="Find exactly what you are looking for." />
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div v-for="category in categories" :key="category.value"
+        <RouterLink :to="category.url" v-for="category in categories" :key="category.value"
           class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64">
           <img :src="category.image" :alt="category.name"
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
@@ -37,7 +40,7 @@ const categories = [
               {{ category.name }}
             </h3>
           </div>
-        </div>
+        </RouterLink>
       </div>
     </div>
   </section>
