@@ -10,13 +10,13 @@ defineProps<{
 </script>
 
 <template>
-  <div class="card bg-base-100 shadow-sm flex flex-col relative rounded-xl group">
+  <div class="card bg-base-100 shadow-sm flex flex-col rounded-xl group">
     <span class="badge absolute top-2 left-2">{{ product.category.slice(0, 1).toUpperCase() + product.category.slice(1)
-    }}</span>
+      }}</span>
     <FloatingActionButtons />
     <figure class="px-6 pt-6 h-48 flex items-center justify-center bg-white rounded-t-xl">
       <img :src="product.image" :alt="product.title"
-        class="max-h-full max-w-full object-contain hover:scale-105 transition-transform duration-300" />
+        class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
     </figure>
     <div class="card-body grow">
       <div class=" mb-2">
