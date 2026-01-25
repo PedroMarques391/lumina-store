@@ -1,7 +1,14 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router';
+function scrollToProducts() {
+  const element = document.getElementById('products');
 
-const router = useRouter();
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+}
 </script>
 
 <template>
@@ -15,7 +22,7 @@ const router = useRouter();
           Discover the perfect balance between luxury and daily wear.
           From exquisite gemstones to essential clothing for him and her.
         </p>
-        <button @click="router.push('/products')" class="btn md:btn-lg btn-primary text-base-100">Go to
+        <button @click="scrollToProducts" class="btn md:btn-lg btn-primary text-base-100">Go to
           products</button>
       </div>
     </div>
