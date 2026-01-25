@@ -8,6 +8,7 @@ import Header from '../header/Header.vue';
 <template>
   <main class="min-h-screen flex flex-col w-full items-center ">
     <Header />
+    <div class="progress-bar" />
     <section class="w-full">
       <RouterView />
     </section>
