@@ -6,8 +6,8 @@ import MenuItens from '@/components/shared/ui/MenuItens.vue';
 <template>
   <ul class="hidden md:flex flex-1 justify-end gap-6">
     <MenuItens label="Home" link="/" />
-    <MenuItens label="Produtos" link="/products" />
-    <MenuItens label="Contato" link="/contacts" />
-    <MenuItens label="Sobre Nós" link="/about-us" />
+    <MenuItens label="Products" link="/products" />
+    <MenuItens label="Contact" link="/contacts" />
+    <MenuItens label="About Us" link="/about-us" />
   </ul>
 </template>
