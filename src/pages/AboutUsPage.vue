@@ -30,12 +30,10 @@ onMounted(() => {
   const elemento: Element = document.querySelector('#stats' as string) as Element;
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+      console.log(entry)
       if (entry.isIntersecting) {
         animateCounter(totalCustomers, 15000);
         animateCounter(totalProducts, 400);
-      } else {
-        totalCustomers.value = 0;
-        totalProducts.value = 0;
       }
     });
   }, { threshold: 0.1 });
