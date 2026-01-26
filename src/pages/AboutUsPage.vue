@@ -2,11 +2,46 @@
 import AboutSection from '@/components/about/AboutSections.vue';
 import TimeLine from '@/components/about/TimeLine.vue';
 import { aboutSections } from '@/utils/data/aboutSection.data';
+import { onMounted, ref, } from 'vue';
 
 
+const totalCustomers = ref(0);
+const totalProducts = ref(0);
 
+const animateCounter = (targetRef: any, endValue: number, duration: number = 2000) => {
+  let start = 0;
+  const stepTime = 50;
+  const totalSteps = duration / stepTime;
+  const increment = endValue / totalSteps;
 
+  const timer = setInterval(() => {
+    start += increment
 
+    if (start >= endValue) {
+      targetRef.value = endValue;
+      clearInterval(timer);
+    } else {
+      targetRef.value = Math.floor(start);
+    }
+  }, stepTime);
+};
+
+onMounted(() => {
+  const elemento: Element = document.querySelector('#stats' as string) as Element;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(totalCustomers, 15000);
+        animateCounter(totalProducts, 400);
+      } else {
+        totalCustomers.value = 0;
+        totalProducts.value = 0;
+      }
+    });
+  }, { threshold: 0.1 });
+
+  observer.observe(elemento as Element)
+});
 
 </script>
 
@@ -31,16 +66,16 @@ import { aboutSections } from '@/utils/data/aboutSection.data';
     <AboutSection v-for="(aboutSection, index) in aboutSections" v-bind="aboutSection" :key="index" />
 
     <div class="flex justify-center py-16 bg-base-100">
-      <div class="stats stats-vertical lg:stats-horizontal shadow bg-base-200 w-full max-w-4xl">
+      <div id="stats" class="stats stats-vertical lg:stats-horizontal shadow bg-base-200 w-full max-w-4xl">
         <div class="stat place-items-center">
           <div class="stat-title">Happy Customers</div>
-          <div class="stat-value text-primary">15K+</div>
+          <div class="stat-value text-primary">{{ totalCustomers.toLocaleString() }}+</div>
           <div class="stat-desc">Worldwide Shipping</div>
         </div>
 
         <div class="stat place-items-center">
           <div class="stat-title">Unique Pieces</div>
-          <div class="stat-value text-secondary">400+</div>
+          <div class="stat-value text-secondary">{{ totalProducts.toLocaleString() }}+</div>
           <div class="stat-desc">Jewelry & Apparel</div>
         </div>
 
