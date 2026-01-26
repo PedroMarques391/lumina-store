@@ -19,6 +19,7 @@ const featuredProducts = computed(() => {
   <div class="flex flex-col min-h-screen">
     <Hero />
     <CategorySection />
+
     <ProductsSection :products="featuredProducts" :is-loading="isLoading" />
   </div>
 </template>
