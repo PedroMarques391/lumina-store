@@ -9,7 +9,7 @@ defineProps<SkeletonProps>()
 </script>
 
 <template>
-  <div v-if="isLoading" class="flex flex-col gap-4">
+  <div v-if="isLoading" class="flex flex-col gap-4 w-full">
     <div class="skeleton h-48 w-full"></div>
     <div class="skeleton h-4 w-28"></div>
     <div class="skeleton h-4 w-full"></div>

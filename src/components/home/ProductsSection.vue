@@ -21,7 +21,8 @@ defineProps<ProductsSectionProps>()
       <SectionTitle title="Featured Products" subtitle="Check out our top-rated selection just for you." />
 
 
-      <div class="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-self-center">
+      <div
+        class="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-self-center justify-items-center">
         <ProductCardSkeleton :is-loading="isLoading" v-for="i in 3" :key="i" />
         <ProductCard v-if="!isLoading" v-for="product in products" :key="product.id" :product="product"
           class="w-full max-w-sm" />
