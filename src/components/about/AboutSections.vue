@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+
 export interface AboutSectionProps {
   title: string
   paragraph1: string
@@ -22,9 +23,9 @@ const props = withDefaults(defineProps<AboutSectionProps>(), {
       <img :src="imagePath"
         class="max-w-sm md:max-w-md rounded-lg shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 object-cover h-96"
         alt="Fashion Design Process" />
-      <div class="max-w-xl">
-        <h2 class="text-3xl font-bold mb-4">{{ title }}</h2>
-        <p class="py-2 text-base-content/80 leading-relaxed">
+      <div class="max-w-xl " :class="{ 'text-end': direction === 'right' }">
+        <h1 class="text-3xl font-bold mb-4">{{ title }}</h1>
+        <p class=" py-2 text-base-content/80 leading-relaxed">
           {{ paragraph1 }}
         </p>
         <p v-if="paragraph2" class="py-2 text-base-content/80 leading-relaxed">
