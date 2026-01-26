@@ -1,24 +1,22 @@
 <script setup lang="ts">
 import SectionTitle from '@/components/shared/SectionTitle.vue';
+import type { Category } from '@/types/Products';
 
-const categories = [
+const categories: { name: string; value: Category; image: string }[] = [
   {
     name: 'Jewelery',
     value: 'jewelery',
     image: '/images/Jewelery.jpeg',
-    url: '/products/category/jewelery'
   },
   {
     name: "Men's clothing",
-    value: "mens-clothing",
+    value: "men's clothing",
     image: '/images/Mens-Clothing.jpeg',
-    url: '/products/category/mens-clothing'
   },
   {
     name: "Women's clothing",
-    value: "womens-clothing",
+    value: "women's clothing",
     image: '/images/Womens-Clothing.jpeg',
-    url: '/products/category/womens-clothing'
   },
 ]
 </script>
@@ -29,7 +27,10 @@ const categories = [
       <SectionTitle title="Browse by Category" subtitle="Find exactly what you are looking for." />
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <RouterLink :to="category.url" v-for="category in categories" :key="category.value"
+        <RouterLink 
+          :to="{ path: '/products', query: { category: category.value } }" 
+          v-for="category in categories" 
+          :key="category.value"
           class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64">
           <img :src="category.image" :alt="category.name"
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
