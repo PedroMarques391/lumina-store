@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { timelineEvents } from '@/utils/data/timelineEvents.data';
+import { CheckIcon } from 'lucide-vue-next';
 </script>
 
 <template>
