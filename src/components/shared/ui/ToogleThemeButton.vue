@@ -7,7 +7,7 @@ const { theme, toggleTheme } = useThemeStore();
 
 <template>
   <label class="toggle text-base-content">
-    <input type="checkbox" class="theme-controller" :checked="theme === 'dark'" @change="toggleTheme" />
+    <input type="checkbox" class="theme-controller" :checked="theme === 'sunset'" @change="toggleTheme" />
 
     <svg aria-label="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor">

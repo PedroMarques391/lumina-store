@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-export type Theme = 'nord' | 'dark'
+export type Theme = 'nord' | 'sunset'
 
 export const useThemeStore = defineStore('theme', () => {
   const savedTheme = localStorage.getItem('theme') as Theme | null
@@ -16,7 +16,7 @@ export const useThemeStore = defineStore('theme', () => {
   applyTheme(theme.value)
 
   const toggleTheme = () => {
-    const newTheme = theme.value === 'dark' ? 'nord' : 'dark'
+    const newTheme = theme.value === 'sunset' ? 'nord' : 'sunset'
     applyTheme(newTheme)
   }
 
