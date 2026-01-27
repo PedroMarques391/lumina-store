@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
   <div class="text-center mb-10">
-    <h2 class="text-3xl font-bold text-gray-800 mb-2">{{ title }}</h2>
-    <p v-if="subtitle" class="text-gray-500 max-w-2xl mx-auto">{{ subtitle }}</p>
+    <h2 class="text-3xl font-bold accent-content mb-2">{{ title }}</h2>
+    <p v-if="subtitle" class="neutral-content max-w-2xl mx-auto">{{ subtitle }}</p>
   </div>
 </template>

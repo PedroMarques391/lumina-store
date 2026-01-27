@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import MenuItens from '@/components/shared/ui/MenuItens.vue';
+import ToogleThemeButton from '../shared/ui/ToogleThemeButton.vue';
 
 </script>
 
@@ -11,6 +12,7 @@ import MenuItens from '@/components/shared/ui/MenuItens.vue';
       <MenuItens label="Products" link="/products" />
       <MenuItens label="Contact" link="/contacts" />
       <MenuItens label="About Us" link="/about-us" />
+      <ToogleThemeButton />
     </ul>
   </div>
 </template>

@@ -22,16 +22,13 @@ const categories: { name: string; value: Category; image: string }[] = [
 </script>
 
 <template>
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-base-300">
     <div class="container mx-auto px-4">
       <SectionTitle title="Browse by Category" subtitle="Find exactly what you are looking for." />
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <RouterLink 
-          :to="{ path: '/products', query: { category: category.value } }" 
-          v-for="category in categories" 
-          :key="category.value"
-          class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64">
+        <RouterLink :to="{ path: '/products', query: { category: category.value } }" v-for="category in categories"
+          :key="category.value" class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64">
           <img :src="category.image" :alt="category.name"
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
           <div

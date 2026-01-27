@@ -5,7 +5,7 @@ import MenuItens from '../shared/ui/MenuItens.vue';
 const year = new Date().getFullYear();
 </script>
 <template>
-  <footer class="footer footer-horizontal footer-center bg-neutral text-base-200 rounded p-10">
+  <footer class="footer footer-horizontal footer-center bg-neutral text-neutral-content rounded p-10">
     <ul class="grid grid-flow-col gap-4">
       <MenuItens label="Home" link="/" />
       <MenuItens label="Products" link="/products" />
