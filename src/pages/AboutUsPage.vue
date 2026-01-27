@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AboutSection from '@/components/about/AboutSections.vue';
 import TimeLine from '@/components/about/TimeLine.vue';
+import HeroSection from '@/components/shared/HeroSection.vue';
 import { aboutSections } from '@/utils/data/aboutSection.data';
 import { onMounted, ref, } from 'vue';
 
@@ -44,21 +45,10 @@ onMounted(() => {
 
 <template>
   <div class="bg-base-100 min-h-screen">
-    <div class="hero min-h-[20vh] bg-base-200">
-      <div class="hero-content text-center">
-        <div class="max-w-3xl">
-          <div class="badge badge-primary badge-outline mb-4">Our Journey</div>
-          <h1 class="text-5xl font-bold tracking-tight mb-6">
-            We don't just sell clothes. <br>
-            <span class="text-primary">We curate confidence.</span>
-          </h1>
-          <p class="text-lg text-base-content/70">
-            Lumina was born from the belief that style should be effortless.
-            Timeless jewelry and essential wear, curated for those who value quality over trends.
-          </p>
-        </div>
-      </div>
-    </div>
+
+
+    <HeroSection badge="Our Jorney" title="We don't just sell clothes." span="We curate confidence."
+      subtitle="Lumina was born from the belief that style should be effortless. Timeless jewelry and essential wear, curated for those who value quality over trends." />
 
     <AboutSection v-for="(aboutSection, index) in aboutSections" v-bind="aboutSection" :key="index" />
 
