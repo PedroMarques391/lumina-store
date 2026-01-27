@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { EyeIcon, PlusIcon } from 'lucide-vue-next';
 
+interface FloatingActionButtonsProps {
+  goToProduct: () => void
+}
+
+
+defineProps<FloatingActionButtonsProps>()
 </script>
 
 <template>
@@ -16,7 +22,7 @@ import { EyeIcon, PlusIcon } from 'lucide-vue-next';
     </div>
 
     <div class="tooltip tooltip-left" data-tip="Ver Detalhes">
-      <button
+      <button @click="goToProduct"
         class="btn btn-circle btn-sm bg-base-100/80 backdrop-blur-sm shadow-lg border-none hover:bg-white hover:text-black hover:scale-110 transition-transform">
         <EyeIcon class="w-4 h-4" />
       </button>

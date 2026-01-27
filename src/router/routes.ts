@@ -3,6 +3,7 @@ import AboutUsPage from '@/pages/AboutUsPage.vue'
 import ContactPage from '@/pages/ContactPage.vue'
 import HomePage from '@/pages/HomePage.vue'
 import ProductPage from '@/pages/ProductPage.vue'
+import ProductsPage from '@/pages/ProductsPage.vue'
 import type { RouteRecordRaw } from 'vue-router'
 
 export const routes: RouteRecordRaw[] = [
@@ -20,11 +21,23 @@ export const routes: RouteRecordRaw[] = [
   },
   {
     path: '/products',
-    name: 'Product',
+    name: 'Products',
     component: AppLayout,
     children: [
       {
         path: '',
+        name: 'ProductsPage',
+        component: ProductsPage,
+      },
+    ],
+  },
+  {
+    path: '/product',
+    name: 'Product',
+    component: AppLayout,
+    children: [
+      {
+        path: ':id',
         name: 'ProductPage',
         component: ProductPage,
       },
