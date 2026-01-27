@@ -25,3 +25,26 @@ export const faqData = [
       'Yes, all our jewelry pieces come with a 1-year warranty against manufacturing defects such as tarnishing or loose stones. Fashion items have a 90-day guarantee for stitching and fabric integrity.',
   },
 ]
+
+export const faqContactData = [
+  {
+    question: 'How long does shipping take?',
+    answer:
+      'Standard shipping takes 5-7 business days. Express shipping is available for 2-3 day delivery.',
+  },
+  {
+    question: 'What is your return policy?',
+    answer:
+      'We offer a 30-day return policy for unworn items with original tags. Free returns on all orders.',
+  },
+  {
+    question: 'Do you ship internationally?',
+    answer:
+      'Yes! We ship to over 50 countries worldwide. Shipping costs and times vary by location.',
+  },
+  {
+    question: 'How can I track my order?',
+    answer:
+      "Once your order ships, you'll receive a tracking number via email to monitor your delivery.",
+  },
+]
