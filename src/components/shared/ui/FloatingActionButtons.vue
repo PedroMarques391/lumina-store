@@ -3,6 +3,7 @@ import { EyeIcon, PlusIcon } from 'lucide-vue-next';
 
 interface FloatingActionButtonsProps {
   goToProduct: () => void
+  addToCart: () => void
 }
 
 
@@ -16,7 +17,8 @@ defineProps<FloatingActionButtonsProps>()
               transition-all duration-300 ease-in-out">
 
     <div class="tooltip tooltip-left" data-tip="Adicionar">
-      <button class="btn btn-circle btn-sm btn-primary shadow-lg border-none hover:scale-110 transition-transform">
+      <button @click="addToCart"
+        class="btn btn-circle btn-sm btn-primary shadow-lg border-none hover:scale-110 transition-transform">
         <PlusIcon class="w-4 h-4 text-white" />
       </button>
     </div>
