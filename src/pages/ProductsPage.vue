@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import ProductCard from '@/components/shared/ProductCard.vue';
 import SectionTitle from '@/components/shared/SectionTitle.vue';
+import Breadcrumbs from '@/components/shared/ui/Breadcrumbs.vue';
 import ProductCardSkeleton from '@/components/shared/ui/ProductCardSkeleton.vue';
 import { useProducts } from '@/composables/useProducts';
 import router from '@/router';
@@ -53,6 +54,11 @@ const updateCategoryFilter = (category: Categories) => {
 
 <template>
   <section class="container mx-auto my-10 px-4">
+    <Breadcrumbs>
+      <li><a @click="router.push('/')" class="cursor-pointer hover:text-primary">Home</a></li>
+      <li><a @click="router.push('/products')" class="cursor-pointer hover:text-primary">Products</a></li>
+      <li>All Products</li>
+    </Breadcrumbs>
     <SectionTitle title="Products" subtitle="Check out our main selection made exclusively for you!" />
 
     <div class="flex justify-center mb-8">
