@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import MenuItens from '@/components/shared/ui/MenuItens.vue';
 import ToogleThemeButton from '../shared/ui/ToogleThemeButton.vue';
+import CartDrawerTrigger from './CartDrawerTrigger.vue';
 
 </script>
 
@@ -12,7 +13,10 @@ import ToogleThemeButton from '../shared/ui/ToogleThemeButton.vue';
       <MenuItens label="Products" link="/products" />
       <MenuItens label="Contact" link="/contacts" />
       <MenuItens label="About Us" link="/about-us" />
-      <ToogleThemeButton />
+      <div class="p-2 flex items-center justify-between ">
+        <ToogleThemeButton />
+        <CartDrawerTrigger />
+      </div>
     </ul>
   </div>
 </template>

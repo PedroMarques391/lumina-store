@@ -53,6 +53,7 @@ const updateCategoryFilter = (category: Categories) => {
 </script>
 
 <template>
+
   <section class="container mx-auto my-10 px-4">
     <Breadcrumbs>
       <li><a @click="router.push('/')" class="cursor-pointer hover:text-primary">Home</a></li>
