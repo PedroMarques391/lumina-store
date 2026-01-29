@@ -12,7 +12,7 @@ const { incrementProducAmount, decrementProductAmount, removeProduct, clearCart 
 <template>
   <div class="drawer drawer-end z-50 w-fit">
     <input id="cart-drawer" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-side z-50">
+    <div class="drawer-side">
       <label for="cart-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
       <aside class="bg-base-200 min-h-full w-96 p-4 flex flex-col">
         <div class="flex items-center justify-between mb-6">
