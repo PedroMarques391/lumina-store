@@ -7,6 +7,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![DaisyUI](https://img.shields.io/badge/DaisyUI-5.5-5A0EF8?style=flat&logo=daisyui&logoColor=white)](https://daisyui.com/)
 [![Pinia](https://img.shields.io/badge/Pinia-3.0-FFD859?style=flat&logo=pinia&logoColor=black)](https://pinia.vuejs.org/)
+[![Deploy](https://img.shields.io/badge/Deploy-Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)](https://cloudflare.com/)
 
 
 Lumina Store is a practice project built to improve Vue.js skills and explore modern frontend development patterns. This e-commerce application demonstrates the implementation of a complete shopping experience with state management, routing, and dynamic content.
