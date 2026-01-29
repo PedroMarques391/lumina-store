@@ -1,4 +1,9 @@
-export const faqData = [
+interface Faq {
+  question: string
+  answer: string
+}
+
+export const faqData: Faq[] = [
   {
     question: 'How do I choose the right size for rings and clothing?',
     answer:
@@ -26,7 +31,7 @@ export const faqData = [
   },
 ]
 
-export const faqContactData = [
+export const faqContactData: Faq[] = [
   {
     question: 'How long does shipping take?',
     answer:
