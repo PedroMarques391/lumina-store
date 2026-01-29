@@ -29,7 +29,7 @@ const featuredProducts = computed(() => {
 
     <div class="divider"></div>
 
-    <SectionTitle title="F. A. Q."" subtitle=" Frequently Asked Questions" />
+    <SectionTitle title="F. A. Q." subtitle="Frequently Asked Questions" />
 
     <div class="w-full max-w-5xl mx-auto mb-10 space-y-2">
       <div v-for="(faq, index) in faqData" :tabindex="index"
