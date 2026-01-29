@@ -11,9 +11,9 @@ defineProps<FloatingActionButtonsProps>()
 </script>
 
 <template>
-  <div class="absolute top-4 right-4 z-10 flex flex-col gap-2
-              opacity-0 group-hover:opacity-100
-              translate-x-4 group-hover:translate-x-0
+  <div class="absolute top-4 right-4 z-10 flex flex-col gap-2 opacity-100 translate-x-0
+              md:opacity-0 group-hover:opacity-100
+              md:translate-x-4 group-hover:translate-x-0
               transition-all duration-300 ease-in-out">
 
     <div class="tooltip tooltip-left" data-tip="Adicionar">
