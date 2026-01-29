@@ -6,7 +6,7 @@ const year = new Date().getFullYear();
 </script>
 <template>
   <footer class="footer footer-horizontal footer-center bg-neutral text-neutral-content rounded p-10">
-    <ul class="grid grid-flow-col gap-4">
+    <ul class="grid grid-cols-2 md:grid-cols-4  gap-4 ">
       <MenuItens label="Home" link="/" />
       <MenuItens label="Products" link="/products" />
       <MenuItens label="Contact" link="/contacts" />
