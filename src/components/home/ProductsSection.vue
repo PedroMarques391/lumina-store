@@ -16,7 +16,7 @@ defineProps<ProductsSectionProps>()
 </script>
 
 <template>
-  <section id="products" class="py-16 bg-base-200">
+  <section id="products" class="pt-16 bg-base-200">
     <div class="container mx-auto px-4">
       <SectionTitle title="Featured Products" subtitle="Check out our top-rated selection just for you." />
 
