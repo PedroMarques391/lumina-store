@@ -1,3 +1,24 @@
+<script setup lang="ts">
+import { onMounted, onUnmounted } from 'vue';
+
+const closeDrawerOnResize = () => {
+  const drawerCheckbox = document.getElementById('my-drawer-1') as HTMLInputElement;
+  
+  if (drawerCheckbox && window.innerWidth >= 768) {
+    drawerCheckbox.checked = false;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('resize', closeDrawerOnResize);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', closeDrawerOnResize);
+});
+
+</script>
+
 <template>
   <div class="drawer block md:hidden z-50 w-fit">
     <input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
