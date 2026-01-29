@@ -55,7 +55,9 @@ export const useProductStore = defineStore('product', () => {
 
   function incrementProducAmount(id: number) {
     const cartItem = productCart.value.find((item) => item.id === id)
-    addProduct(cartItem as Product, id, 1)
+    console.log(cartItem)
+    if (!cartItem) return
+    addProduct(cartItem, id, 1)
   }
 
   function decrementProductAmount(id: number) {

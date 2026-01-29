@@ -12,10 +12,7 @@ function goToProduct(id: number) {
   route.push(`/product/${id}`)
 }
 
-function addToCart(id: number) {
-  console.log(id)
-  store.incrementProducAmount(id)
-}
+
 
 defineProps<{
   product: Product
@@ -25,8 +22,9 @@ defineProps<{
 <template>
   <div class="card bg-base-100 shadow-sm flex flex-col rounded-xl group">
     <span class="badge absolute top-2 left-2">{{ product.category.slice(0, 1).toUpperCase() + product.category.slice(1)
-    }}</span>
-    <FloatingActionButtons :go-to-product="() => goToProduct(product.id)" :add-to-cart="() => addToCart(product.id)" />
+      }}</span>
+    <FloatingActionButtons :go-to-product="() => goToProduct(product.id)"
+      :add-to-cart="() => store.addProduct(product, product.id, 1)" />
     <figure class="px-6 pt-6 h-48 flex items-center justify-center bg-white rounded-t-xl">
       <img :src="product.image" :alt="product.title"
         class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
@@ -51,7 +49,8 @@ defineProps<{
 
       <div class="mt-auto flex items-center justify-between">
         <span class="text-xl font-bold text-primary">${{ product.price }}</span>
-        <button @click="addToCart(product.id)" class="btn btn-primary btn-sm rounded-lg text-base-100">Add to
+        <button @click="store.addProduct(product, product.id, 1)"
+          class="btn btn-primary btn-sm rounded-lg text-base-100">Add to
           Cart</button>
       </div>
     </div>
