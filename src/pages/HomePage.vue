@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BrandsSection from '@/components/home/BrandsSection.vue';
 import CategorySection from '@/components/home/CategorySection.vue';
 import Hero from '@/components/home/Hero.vue';
 import ProductsSection from '@/components/home/ProductsSection.vue';
@@ -23,6 +24,8 @@ const featuredProducts = computed(() => {
     <CategorySection />
 
     <ProductsSection :products="featuredProducts" :is-loading="isLoading" />
+
+    <BrandsSection />
 
     <div class="divider"></div>
 
