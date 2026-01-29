@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Logo from '../shared/Logo.vue';
 import ProductCart from '../shared/ProductCart.vue';
-import CartDrawerTrigger from './CartDrawerTrigger.vue';
 import DrawerTrigger from './DrawerTrigger.vue';
 import MenuDesktop from './MenuDesktop.vue';
 import MenuMobile from './MenuMobile.vue';
@@ -17,9 +16,6 @@ import MenuMobile from './MenuMobile.vue';
       <DrawerTrigger>
         <MenuMobile />
       </DrawerTrigger>
-      <div class="absolute top-1/2 -translate-y-1/2 right-10 hidden md:block">
-        <CartDrawerTrigger />
-      </div>
     </nav>
     <ProductCart />
   </header>
